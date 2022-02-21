@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+
+  body{
+      background-color: rgb(70, 237, 243);
+      overflow-y: hidden;
+      overflow-x: hidden;
+  }
+
+  .road{
+      max-width: 1650px;
+      width: 100%;
+      height: 620px;
+        
+  }
+
+
+  .pinkcar {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    animation-name: move;
+    animation-delay: 0.5s;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+  }
+
+  .yellowcar {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    animation-name: anim;
+    animation-delay: 0.5s;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    
+    
+  
+  }
+
+  @keyframes anim {
+    0% {
+      top: 120px;
+      left: -500px;
+    }
+  
+    
+    100% {
+      top: 120px;
+      left: 1500px;
+     
+      
+    }
+  }
+
+
+  @keyframes move {
+    0% {
+        top: 20px;
+        right: -600px;
+      
+    }
+ 
+    100% {
+     
+      top: 20px;
+      right: 1500px;
+     
+    }
+  }
